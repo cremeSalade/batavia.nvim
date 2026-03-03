@@ -1118,6 +1118,104 @@ vim.cmd([[
   inoreabbrev nbsp;  
 ]])
 
+vim.cmd([[
+  " French accents (lowercase)
+  inoreabbrev e'; é
+  inoreabbrev e`; è
+  inoreabbrev e^; ê
+  inoreabbrev e:; ë
+  inoreabbrev o^; ô
+  inoreabbrev a`; à
+  inoreabbrev a^; â
+  inoreabbrev i^; î
+  inoreabbrev i:; ï
+  inoreabbrev u`; ù
+  inoreabbrev u^; û
+  inoreabbrev u:; ü
+  inoreabbrev y:; ÿ
+  inoreabbrev c,; ç
+  inoreabbrev oe; œ
+  inoreabbrev ae; æ
+
+  " French accents (uppercase)
+  inoreabbrev E'; É
+  inoreabbrev E`; È
+  inoreabbrev E^; Ê
+  inoreabbrev E:; Ë
+  inoreabbrev O^; Ô
+  inoreabbrev A`; À
+  inoreabbrev A^; Â
+  inoreabbrev I^; Î
+  inoreabbrev I:; Ï
+  inoreabbrev U`; Ù
+  inoreabbrev U^; Û
+  inoreabbrev U:; Ü
+  inoreabbrev Y:; Ÿ
+  inoreabbrev C,; Ç
+  inoreabbrev OE; Œ
+  inoreabbrev AE; Æ
+
+  " Whole words
+  inoreabbrev oeuf; œuf
+  inoreabbrev coeur; cœur
+  inoreabbrev soeur; sœur
+]])
+
+vim.cmd([[
+  " Math / typography
+  inoreabbrev --; —
+  inoreabbrev mdash; —
+  inoreabbrev emdash; —
+  inoreabbrev ndash; –
+  inoreabbrev endash; –
+  inoreabbrev <expr> zwsp; nr2char(0x200B)
+  inoreabbrev bul; •
+  inoreabbrev check; ✓
+  inoreabbrev sect; §
+  inoreabbrev rarrow; →
+  inoreabbrev larrow; ←
+  inoreabbrev uarrow; ↑
+  inoreabbrev darrow; ↓
+  inoreabbrev lrarrow; ↔
+
+  " Booleans
+  inoreabbrev and; ∧
+  inoreabbrev or; ∨
+  inoreabbrev xor; ⊕
+
+  " Propositions
+  inoreabbrev not; ¬
+  inoreabbrev impl; ⇒
+  inoreabbrev equiv; ⇔
+
+  " Sets
+  inoreabbrev forall; ∀
+  inoreabbrev exist; ∃
+  inoreabbrev inset; ∈
+  inoreabbrev notin; ∉
+  inoreabbrev niset; ∋
+  inoreabbrev notni; ∌
+  inoreabbrev subset; ⊂
+  inoreabbrev subseq; ⊆
+  inoreabbrev supset; ⊃
+  inoreabbrev supseq; ⊇
+  inoreabbrev union; ∪
+  inoreabbrev intersect; ∩
+
+  " Proofs
+  inoreabbrev therefore; ∴
+  inoreabbrev because; ∵
+  inoreabbrev qed; ∎
+
+  " Misc
+  inoreabbrev cong; ≅
+  inoreabbrev sqrt; √
+  inoreabbrev approx; ≈
+  inoreabbrev sum; ∑
+  inoreabbrev integral; ∫
+  inoreabbrev dagger; †
+]])
+
 vim.keymap.set("i", "<C-l>", "<C-]>", { noremap = true, silent = true, desc = "Expand abbreviation" })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
