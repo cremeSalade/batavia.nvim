@@ -1099,13 +1099,26 @@ vim.cmd([[
   inoreabbrev eaam; É
   inoreabbrev egmin; è
   inoreabbrev eagm; È
+  inoreabbrev ccdm; Ç
+  inoreabbrev ccd; ç
+  inoreabbrev pdm; ·
   inoreabbrev --; —
   inoreabbrev salad; 🥗
   inoreabbrev otter; 🦦
   inoreabbrev check; ✅
   inoreabbrev toolbox; 🧰
   inoreabbrev mirror; 🪞
+  inoreabbrev dialog; 💬
+  inoreabbrev sandwich; 🥪
+  inoreabbrev bug; 🐞
+  inoreabbrev mirror; 🪞
+  inoreabbrev guillements; «  »
+  inoreabbrev quotes; “  ”
+  inoreabbrev code; ```  ``` 
+  inoreabbrev nbsp;  
 ]])
+
+vim.keymap.set("i", "<C-l>", "<C-]>", { noremap = true, silent = true, desc = "Expand abbreviation" })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
